@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        display: block;
+        text-align: center;
+        background-color: lightskyblue;
+      }
+      h1 {
+        color: rgb(56, 19, 19);
+      }
+      label {
+        color: blue;
+      }
+      #login {
+        color: rgb(12, 12, 153);
+        background-color: rgb(146, 90, 118);
+      }
+      form {
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <h1>Login Form</h1>
+      <div>
+        <label for="username">UserName</label>
+        <input
+          type="text"
+          placeholder="Enter UserName"
+          id="username"
+          required
+        />
+      </div>
+      <br />
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          id="password"
+          required
+        />
+      </div>
+      <br />
+      <!-- 1-required attribute me input type submit lena padta hai aur value kuch bhi le sakta hai 
+           2- jish bhi input me required attribute use hoga ushko fill krna hi padega bina fill kiye submit ni hoga -->
+      <div>
+        <input type="submit" id="login" value="Login" />
+      </div>
+    </form>
+  </body>
+</html>
