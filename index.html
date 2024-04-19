@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.drupal.org%2Fproject%2Fdrupal%2Fissues%2F174940&psig=AOvVaw016-BYja6WOYsQAoD9yHuT&ust=1712207208639000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMipp4ujpYUDFQAAAAAdAAAAABAE">
+    <title>Document</title>
+    <style>
+        table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th, td {
+        background-color: #96D4D4;
+      }
+      /* 
+       If screen size is more than 600px wide, set the font-size of <div> to 80px 
+           @media screen and (min-width: 600px) {
+  div.example {
+    font-size: 80px;
+  }
+      }
+
+        If screen size is 600px wide, or less, set the font-size of <div> to 30px 
+            @media screen and (max-width: 600px) {
+                            div.example {
+                   font-size: 30px;
+                }
+                }  */
+      
+    </style>
+   
+  </head>
+  <body >
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- Use the <a> element to define a link
+        Use the href attribuate to define Where to open the linked document
+        Use the target attribuate to degine where to open the linked document
+        Use <img> element(inside<a>) to use an image as a link
+            Use the mailto: scheme inside the href attribuate to create a link that opens the  user's email program
+        -->
+    <!-- Use the id attribuate(id="value") to define bookmarks in a page
+            Use the href attribuate (href="#value") to link to the bookmark-->
+    <!-- The alt attribute should reflect the image content, so users who cannot see the image get 
+      an understanding of what the image contains
+            NOTE: Always specify the width and height of an image. if weidth and height are not specified,
+             the web page might flicker while the image loads.
+        -->
+    <p>
+      Difference between href and src="HREF stands for HyperText Reference,
+      while SRC stands for Source Reference. HREF is used to refer to another
+      HTML element, whereas SRC refers to a non-HTML file. In other words, HREF
+      is used to refer to pages on the same website, whereas SRC refers to pages
+      on different servers.
+    </p>
+    <h2>Floating Images</h2>
+ <p><!--<strong> Float the image to the right: </strong>--></p>
+    <p>
+      <img src="smiley.gift" alt="Smiley face" style="float:right; width:42px;height:42px"
+            
+      image.
+      <strong> float se ham image left ya right kr sakte hai</strong>
+    </p>
+    <h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+ <h1> Map method can defines an image map.An image map is an image with clickable areas.
+    The area are defined with one or more <area> tags.
+ </h1>
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+  <p><strong> Chapter Summery</strong>
+  <pre> 
+    1. Use the HTML map element to define an image.
+    2. Use the HTML area element to define the clickable areas in the image.
+    3.Use the HTML <b>usemap</b> attribuate of the img element to point to an image.
+  </pre>
+</p>
+<div>
+    <h1> Background image</h1>
+    <p> If you want the background image to cover the entire element, you can set the background size property to cover.<br>
+      Also, to make sure the entire element is always covered, set the background-attachment property to fixed.<br>
+      This way, the bckground image will cover the entire element, with no stretching
+      (the image will keep its original proportions)
+      <q> body{
+        background-image: url('img_girl.jpg');
+        background-repeat: no-repeat:(if img is small than not to reapeat to full page)
+        background-attachment:fixed;
+        background-size: cover;
+      </q>
+    </p>
+    <h2> A basic HTML table</h2>
+    <table style="width:100%">
+    <tr>
+        <th> Company</th>
+        <th>Contact</th>
+        <th> Country</th>
+    </tr>
+    <tr>
+        <td>Alfread futterKiste</td>
+        <td> Maria Anders</td>
+        <td> Germany</td>
+    </tr>
+    <tr>
+        <td>Centro comercial Moctezuma</td>
+        <td> Francisco Chang</td>
+        <td>Maxico</td>
+    </tr>
+    <<p> unorderList ko <b>ul tag se </b> And order list ko<b> ol tag se</b>likhna chahiye <strong>example(ul li)(ol li)</strong></p>
+    <strong>A table with the Caption</strong>
+  </table>
+    
+    <br>
+    <br>
+    <table style="width:100">
+    <caption>Moanthly Saving</caption>
+    <tr>
+      <th>Month</th>
+      <th>Seaving</th>
+    </tr>
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Febuary</td>
+      <td>$100</td>
+    </tr>
+    
+    
+    </table>
+</div>
+<div>
+  <p>
+    HTML also supports description lists
+    A description list is a list of terms, with a description of each term.
+    The <b>dl tag</b> defines the description list, the <b> dt tag</b> defines the term(name),
+     and the <b>dd tag</b>describes each term.
+    </p>
+    <dl>
+      <dt>Coffee</dt>
+      <dd> - black hot drink</dd>
+      <dt>Milk</dt>
+      <dd>- white cold drink</dd>
+    </dl>
+
+</div>
+<div>
+  order hai <strong>dl,dt,dd</strong>
+</div>
+<div>
+  <h1>Chapter Summary head tag</h1>
+  <p>
+    <ul>
+      <li>
+        The <strong>Head</strong> element is a container for metadata(data about data)
+      </li>
+      <li>
+        The <strong>Head</strong> element is palaced between the <b>html</b> tag and the <b>body</b> tag.
+
+      </li>
+      <li>
+        The <strong>Title</strong>element is required and it defines the title of the document
+
+      </li>
+      <li>
+        The <strong>Style</strong> element is used to define style information for a single document
+
+      </li>
+      <li>
+        The <strong>Link</strong> tag is most often used to link to external style sheets
+
+      </li>
+      <li>
+        The <strong> Meta</strong> element is typically used to specify the character set, page descriptio, 
+        keywords, author of the document ,
+        and viewport settings
+      </li>
+      <li>
+        The <strong>Script</strong> element is used to define client-side javascripts
+
+      </li>
+      <li>
+        The <strong> Base</strong> element specifies the base URL and/or target for all relative urls in a page.
+      </li>
+    </ul>
+  </p>
+</div>
+<div>
+  <h1>Html Layout </h1>
+  <p>There are foure different techniques to create multicolumn layouts.</p>
+  <ol type="1">
+    <li>
+     CSS framework
+    </li>
+    <li>CSS float property</li>
+    <li>CSS flexbox</li>
+    <li>CSS grid</li>
+  </ol>
+</div>
+<div>
+  <h2>The kbd Element</h2>
+
+<p>The kbd element is used to define keyboard input:</p>
+
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+
+<h2>The samp Element</h2>
+
+<p>The samp element is used to define sample output from a computer program.</p>
+
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+</div>
+<div>
+  <p>The code element does not preserve whitespace and line-break.</p>
+  <p> To fix this, you can put the code element inside a pre element:</p>
+  <pre>
+    <code>
+      x = 5;
+      y = 6;
+      z = x+y;
+    </code>
+  </pre>
+</div>
+<div>
+  <h1>URL- Uniform Resource Locator</h1>
+  <p>like https://www.w3school.com/html/default.asp</p>
+  <strong>scheme://prefix.domain:poart/path/filename</strong>
+  <dh>
+    <dt> Esplanation:</dt>
+    <dd>
+      <ul>
+        <li>
+          <b>Scheme-</b> defines the type of internet service(most common is <b>http or https</b>)
+        </li>
+        <li>
+          <b>Prefix-</b> defines a domain prefix(default for http is <b>www</b>)
+
+        </li>
+        <li>
+          <b>Domain-</b> defines the iternet <b> domain name </b>(like w3school.com)
+        </li>
+        <li>
+          <b>Poart-</b> define the <b> port number </b>at the host
+          (default for http is <b>80</b>)
+        </li>
+        <li>
+          <b>Path-</b> defines a <b>path</b> at the server (If omitted: the root direcotry
+          of the site)
+        </li>
+        <li>
+          <b>Filename-</b> defines the name of docuument or resource.
+        </li>
+      </ul>
+    </dd>
+  </dh>
+</div>
+
+
+
+<!-- // javascripts consepts;    important javascript rules                          -->
+ <!-- 1: charAt() and at() in string is same only diffrence is charAt don't consider a negative value and at method is consider the negative value it' 
+consider a last character of string 
+
+2: slice() and substring() The difference is that start and end values less than 0 are treated as 0 in substring(). but in slice
+is consider at right to left string.
+
+
+
+
+-->
+
+
+  </body>
+</html>
+

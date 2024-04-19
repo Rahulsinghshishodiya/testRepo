@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: white;
+        padding: 10px;
+      }
+      .item {
+        background-color: rgb(255, 0, 0);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+        height: 150px;
+        transition: width 1s, height 1s, transform 2s;
+      }
+      .item:hover {
+        background-color: pink;
+        transform: skewX(60deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item 1">1</div>
+      <div class="item 2">2</div>
+      <div class="item 3">3</div>
+      <div class="item 4">4</div>
+      <div class="item 5">5</div>
+      <div class="item 6">6</div>
+      <div class="item 7">7</div>
+      <div class="item 8">8</div>
+      <div class="item 9">9</div>
+      <div class="item 10">10</div>
+      <div class="item 11">11</div>
+      <div class="item 12">12</div>
+      <div class="item 13">13</div>
+      <div class="item 14">14</div>
+      <div class="item 15">15</div>
+      <div class="item 16">16</div>
+    </div>
+  </body>
+</html>
