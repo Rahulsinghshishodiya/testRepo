@@ -1,209 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script type="text/javascript" src="renderImages.js"></script> -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-size: 14px;
-        box-sizing: border-box;
-      }
-
-      a {
-        text-decoration: none;
-        color: #fff;
-        padding: 3px;
-      }
-      a:hover {
-        color: #ddd;
-      }
-      header {
-        width: 100%;
-        background-color: #0f1111;
-      }
-      .navbar {
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        cursor: pointer;
-        color: #fff;
-        width: 100%;
-        margin: 0 auto;
-      }
-      .icon img {
-        margin-top: 10px;
-        width: 120px;
-      }
-      .address .deliver {
-        margin-left: 9px;
-        font-size: 0.75rem;
-        color: #ccc;
-      }
-      .address .map-icon {
-        display: flex;
-        padding: 2px;
-        align-items: center;
-      }
-      .nav-search {
-        display: flex;
-        justify-content: space-evenly;
-        height: 40px;
-        border-radius: 4px;
-      }
-      .search-input {
-        height: 30px;
-        width: 500px;
-        border: none;
-        padding: 12px;
-      }
-      .select-search {
-        background: #f3f3f3;
-        width: 50px;
-        text-align: center;
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
-        border: none;
-        height: 30px;
-        position: absolute;
-        left: -49px;
-        background-color: lightgrey;
-      }
-
-      .cart {
-        display: flex;
-        margin-right: 41px;
-      }
-
-      .cart i {
-        align-items: center;
-        width: 34px;
-        height: 22px;
-        font-size: 24px;
-      }
-      .cart strong {
-        text-align: center;
-        padding-top: 10px;
-      }
-      .secondnav {
-        background-color: dimgrey;
-        display: flex;
-        justify-content: space-between;
-        padding: 6px;
-        cursor: pointer;
-      }
-      ul {
-        display: flex;
-        align-items: center;
-      }
-      li {
-        float: left;
-        padding: 0 15px;
-        gap: 15px;
-        font-size: small;
-        list-style-type: none;
-        left: auto;
-        color: white;
-      }
-      li:hover {
-        background-color: #ccc;
-      }
-
-      .secondnav-right li {
-        float: right;
-        right: 10px;
-        font-size: small;
-        margin-right: 85px;
-        margin-top: 2px;
-      }
-      .hero img {
-        max-width: 100%;
-        height: 311px;
-      }
-      .shop {
-        display: flex;
-        width: 100%;
-        height: auto;
-      }
-      .shop h1 {
-        color: black;
-        font-size: 21px;
-        padding-bottom: 10px;
-      }
-      .img-shop {
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: 50px;
-        padding: 20px;
-        border: 27px solid #ccc;
-      }
-      .img-shop img {
-        width: 245px;
-        height: 228px;
-        box-shadow: #ccc;
-      }
-      .nev-search {
-        position: relative;
-      }
-      .nev-searchIcon {
-        position: absolute;
-        top: 0px;
-        color: black;
-        right: 0px;
-        border-left: 4px groove;
-        border: 1px solid yellow;
-        margin: 0px;
-        padding: 6px;
-        width: max-content;
-        background-color: yellow;
-      }
-      .sing-in p {
-        font-size: 11px;
-        padding: 5px;
-      }
-      .returns p {
-        font-size: 11px;
-        padding: 5px;
-      }
-      .sing-in {
-        padding: 0 0 15px;
-      }
-      .returns {
-        padding: 0 0 15px;
-      }
-      .hambergon div {
-        position: relative;
-        width: 23px;
-        height: 3px;
-        background-color: black;
-        margin: 3px 15px;
-      }
-      .hambergon {
-        display: inline-block;
-        position: relative;
-      }
-
-      .dropdown-content a {
-        color: black;
-        text-decoration: none;
-        display: block;
-        border: 1px solid black;
-      }
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        z-index: 1;
-        background-color: #ccc;
-        border: 1px solid black;
-      }
-      .hambergon div:hover .dropdown-content {
-        display: block;
-      }
-    </style>
+    <title>My Azmazone Page</title>
+    <link rel="stylesheet" href="/amazonestyle.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -263,16 +72,22 @@
         <div class="secondnav-left">
           <ul>
             <div class="hambericon">
-              <div class="hambergon">
+              <div class="hambergon" onclick="openNav()">
                 <div></div>
                 <div></div>
                 <div></div>
               </div>
-              <div class="dropdown-content">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contect us</a>
-                <a href="#">Use me</a>
+              <div id="mySidenav" class="dropdown-content">
+                <a
+                  href="javascript:void(0)"
+                  class="closebtn"
+                  onclick="closeNav()"
+                  >&times;</a
+                >
+                <a href="#" id="home" onclick="openWin()">Home</a>
+                <a href="#" class="about">About</a>
+                <a href="#" class="contect-us">Contect us</a>
+                <a href="#" class="use-me">Use me</a>
               </div>
             </div>
             <li>All</li>
@@ -292,26 +107,90 @@
     </header>
 
     <div class="hero">
-      <img src="/demo/images/hero-img.jpg" class="hero-img" />
+      <img src="/images/hero-img.jpg" class="hero-img" />
     </div>
 
-    <div class="shop">
+    <div class="shop" id="aa">
       <div class="img-shop">
-        <h1>Shop Laptops & Tables</h1>
-        <img src="/demo/images/img-1.png" class="laptop img" />
+        <h1 class="aa">Shop Laptops & Tables</h1>
+        <img src="/images/img-1.png" class="laptop img" />
       </div>
-      <div class="img-shop">
-        <h1>Shop Smartwatches</h1>
-        <img src="/demo/images/img-2.png" />
+      <div class="img-shop" id="bb">
+        <h1 class="aa">Shop Smartwatches</h1>
+        <img src="/images/img-2.png" />
       </div>
-      <div class="img-shop">
-        <h1>Create with Strip lights</h1>
-        <img src="/demo/images/img-3.png" />
+      <div class="img-shop" id="cc">
+        <h1 class="aa">Create with Strip lights</h1>
+        <img src="/images/img-3.png" />
       </div>
-      <div class="img-shop">
-        <h1>Home Refresh Ideas</h1>
-        <img src="/demo/images/img-4.png" />
+      <div class="img-shop" id="dd">
+        <h1 class="aa">Home Refresh Ideas</h1>
+        <img src="/images/img-4.png" />
       </div>
     </div>
+
+    <script>
+      // document.addEventListener("click", function (event) {
+      //   let target = event.target;
+      //   console.log(target);
+      //   const hamberRef = document.querySelector(".hambergon");
+      //   if (target === hamberRef) {
+      //     const dropRef = document.querySelector(".dropdown-content");
+      //     dropRef.style.display = "block";
+      //   } else {
+      //     const dropRef = document.querySelector(".dropdown-content");
+      //     dropRef.style.display = "none";
+      //   }
+      // });
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "25%";
+        document.getElementById("mySidenav").style.textAlign = "center";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      function openWin() {
+        window.open("http://127.0.0.1:5500/home.html");
+        // document.getElementById("home").style.width = "100%";
+      }
+      // const searchRef = document.querySelector(".search-input");
+
+      // searchRef.addEventListener("change", function (e) {
+      //   let target = e.target.value;
+      //   console.log(target);
+      //   const find = [
+      //     "Shop Laptops & Tables",
+      //     "Shop Smartwatches",
+      //     "Create with Strip lights",
+      //     "Home Refresh Ideas",
+      //   ];
+      //   const imgRef = document.quearySelectorAll(".img-shop img");
+
+      //   //  console.log(haa);
+      //   for (let i = 0; i < find.length; i++) {
+      //     if (find[i] === target) {
+      //       // abc.push(target);
+      //       //console.log(target, "kkkkkkkkkk");
+      //       const aaRef = document.getElementById(".aa");
+
+      //       const bbRef = document.getElementById(".bb");
+      //       const ccRef = document.getElementById(".cc");
+      //       const ddRef = document.getElementById(".dd");
+      //       if (find[i] == aaRef) {
+      //         imgRef.style.display = "block";
+      //       } else if (find[i] == bbRef) {
+      //         imgRef.style.display = "block";
+      //       } else if (find[i] == ccRef) {
+      //         imgRef.style.display = "block";
+      //       } else if (find[i] == ddRef) {
+      //         imgRef.style.display = "block";
+      //       }
+      //     } else {
+      //       imgRef.style.display = "none";
+      //     }
+      //   }
+      // });
+    </script>
   </body>
 </html>

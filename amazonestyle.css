@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  padding: 3px;
+}
+a:hover {
+  color: #ddd;
+}
+header {
+  width: 100%;
+  background-color: #0f1111;
+}
+.navbar {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+.icon img {
+  margin-top: 10px;
+  width: 120px;
+}
+.address .deliver {
+  margin-left: 9px;
+  font-size: 0.75rem;
+  color: #ccc;
+}
+.address .map-icon {
+  display: flex;
+  padding: 2px;
+  align-items: center;
+}
+.nav-search {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40px;
+  border-radius: 4px;
+}
+.search-input {
+  height: 30px;
+  width: 500px;
+  border: none;
+  padding: 12px;
+}
+.select-search {
+  background: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: none;
+  height: 30px;
+  position: absolute;
+  left: -49px;
+  background-color: lightgrey;
+}
+
+.cart {
+  display: flex;
+  margin-right: 41px;
+}
+
+.cart i {
+  align-items: center;
+  width: 34px;
+  height: 22px;
+  font-size: 24px;
+}
+.cart strong {
+  text-align: center;
+  padding-top: 10px;
+}
+.secondnav {
+  background-color: dimgrey;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+  align-items: center;
+}
+li {
+  float: left;
+  padding: 0 15px;
+  gap: 15px;
+  font-size: small;
+  list-style-type: none;
+  left: auto;
+  color: white;
+}
+li:hover {
+  background-color: #ccc;
+}
+
+.secondnav-right li {
+  float: right;
+  right: 10px;
+  font-size: small;
+  margin-right: 85px;
+  margin-top: 2px;
+}
+.hero img {
+  max-width: 100%;
+  height: 311px;
+}
+.shop {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.shop h1 {
+  color: black;
+  font-size: 21px;
+  padding-bottom: 10px;
+}
+.img-shop {
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  padding: 20px;
+  border: 27px solid #ccc;
+}
+.img-shop img {
+  width: 245px;
+  height: 228px;
+  box-shadow: #ccc;
+}
+.nev-search {
+  position: relative;
+}
+.nev-searchIcon {
+  position: absolute;
+  top: 0px;
+  color: black;
+  right: 0px;
+  border-left: 4px groove;
+  border: 1px solid yellow;
+  margin: 0px;
+  padding: 6px;
+  width: max-content;
+  background-color: yellow;
+}
+.sing-in p {
+  font-size: 11px;
+  padding: 5px;
+}
+.returns p {
+  font-size: 11px;
+  padding: 5px;
+}
+.sing-in {
+  padding: 0 0 15px;
+}
+.returns {
+  padding: 0 0 15px;
+}
+.hambergon div {
+  position: relative;
+  width: 23px;
+  height: 3px;
+  background-color: black;
+  margin: 3px 15px;
+}
+.hambergon {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.dropdown-content {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown-content .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.hambergon div:hover .dropdown-content {
+  display: block;
+}
+@media screen and (max-width: 300px) {
+  .navbar {
+    display: inline-block;
+    width: max-content;
+  }
+  .secondnav {
+    display: none;
+  }
+  .hero img {
+    display: inline-block;
+    width: max-content;
+    border-image-repeat: no-repeat;
+    height: max-content;
+  }
+  .shop {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: column;
+  }
+  .img-shop {
+    display: inline-block;
+    width: 100%;
+  }
+}

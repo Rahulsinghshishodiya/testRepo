@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Kanit", sans-serif;
+}
+body {
+  background-color: black;
+  height: 1000000px;
+}
+
+.main {
+  background: url(https://assets.nflxext.com/ffe/siteui/vlv3/9f46b569-aff7-4975-9b8e-3212e4637f16/453ba2a1-6138-4e3c-9a06-b66f9a2832e4/IN-en-20240415-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  width: 100%;
+  height: 800px;
+  position: absolute;
+  opacity: 0.7;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nav {
+  /* border: 2px solid red; */
+  /* // background-color: rgba(23, 23, 23 0.4); */
+
+  position: relative;
+}
+.nav img {
+  margin-left: 103px;
+  width: 442px;
+  height: 90px;
+}
+.nav li {
+  text-decoration: none;
+  list-style-type: none;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  margin-top: 40px;
+  margin-right: 150px;
+}
+.btn :nth-child(1) {
+  padding: 3px;
+  font-size: 20px;
+  width: 106px;
+  background-color: transparent;
+  color: white;
+  margin: 15px;
+  border-radius: 4px;
+  opacity: 4;
+  font-weight: 400;
+}
+.btn :nth-child(2) {
+  font-size: 20px;
+  background-color: red;
+  color: white;
+  padding: 2px;
+  border-radius: 9px;
+}
+.sometext {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 15rem;
+}
+
+.text {
+  align-items: center;
+  justify-content: center;
+}
+.text h1 {
+  font-size: 4rem;
+}
+.p1 {
+  font-size: 39px;
+  padding-bottom: 28px;
+}
+.p2 {
+  font-size: 25px;
+}
+.txtbtn input {
+  width: 32rem;
+  height: 54px;
+  font-size: 32px;
+  padding-left: 28px;
+  background: transparent;
+}
+.txtbtn button {
+  background-color: red;
+  width: 13rem;
+  height: 57px;
+  font-size: 34px;
+  color: white;
+  padding-left: 4px;
+  margin-left: 13px;
+  border-radius: 4px;
+}
+.txtbtn {
+  padding-top: 23px;
+}
+.borderof {
+  width: 100%;
+  background-color: #423c3c;
+  height: 14px;
+  margin-top: 150px;
+}
+.main-containt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.text-content {
+  margin-top: 150px;
+}
+.textheading {
+  font-size: 68px;
+  color: white;
+  text-align: center;
+  margin-right: 587px;
+  padding-bottom: 16px;
+}
+.textpara {
+  font-size: 34px;
+  color: white;
+  margin-right: 200px;
+  text-align: center;
+}
+.video-content video {
+  position: relative;
+  width: 603px;
+  height: 433px;
+  padding: 17px;
+  margin-left: 18px;
+  background-repeat: no-repeat;
+  margin-top: 129px;
+}
+.video-content img {
+  position: absolute;
+  margin-top: 128px;
+  width: 700px;
+}
+.main-containt2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.textheading2 {
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-right: 70px;
+  padding-bottom: 3px;
+}
+.textpara2 {
+  font-size: 31px;
+  color: white;
+  margin-right: 185px;
+  text-align: center;
+}
+.borderof2 {
+  width: 100%;
+  height: 11px;
+  font-size: 43px;
+  margin-top: 163px;
+  background-color: #423c3c;
+}
+.main-containt3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.text-content3 {
+  margin-top: 150px;
+}
+.textheading3 {
+  font-size: 68px;
+  color: white;
+  text-align: center;
+  margin-right: 587px;
+  padding-bottom: 16px;
+}
+.textpara3 {
+  font-size: 34px;
+  color: white;
+  margin-right: 200px;
+  text-align: center;
+}
+.video-content3 video {
+  position: relative;
+  width: 575px;
+  height: 230px;
+  padding: 17px;
+  margin-left: 87px;
+  background-repeat: no-repeat;
+  margin-top: 129px;
+}
+.video-content3 img {
+  position: absolute;
+  margin-top: 128px;
+  width: 700px;
+}
